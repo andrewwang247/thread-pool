@@ -16,8 +16,8 @@ Copyright 2020. Siwei Wang.
 
 using std::accumulate;
 using std::cout;
-using std::flush;
 using std::default_random_engine;
+using std::flush;
 using std::for_each;
 using std::ios_base;
 using std::iota;
