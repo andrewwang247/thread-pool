@@ -25,4 +25,4 @@ Calling `pool.map(f, begin, end)` will schedule the task of running `f(*it)` for
 
 ## Testing
 
-The `benchmark.cpp` file includes 4 unit tests for both versions of applying and mapping. It also benchmarks the performance of the thread library by pitting the multi-threaded `thread_pool::map` against the single-threaded `std::for_each`.
+The `benchmark.cpp` file includes 4 unit tests for both versions of applying and mapping. It then benchmarks the performance of the thread library by pitting the multi-threaded `thread_pool::map` against the single-threaded `std::for_each`.
