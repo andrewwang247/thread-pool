@@ -5,7 +5,7 @@ OPT := -O3 -DNDEBUG
 DEBUG := -g3 -DDEBUG
 
 # Executable name and linked files without extensions.
-EXE := test
+EXE := benchmark
 LINKED := framework
 
 # Build optimized executable.

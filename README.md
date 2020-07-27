@@ -22,3 +22,7 @@ Calling `pool.apply(f, args...)` will schedule the task of running `f(args...)` 
 To apply a function `f` over a range `[begin, end)` of arguments, use either `map` (if `f` returns void) or `map_get` (if `f` has a return value).
 
 Calling `pool.map(f, begin, end)` will schedule the task of running `f(*it)` for each `begin <= it < end`. On top of this, using `map_get` will yield a `std::vector` of `std::future` each with the type of `f(*it)`. The size of this `std::vector` is the same as `std::distance(begin, end)`.
+
+## Testing
+
+The `benchmark.cpp` file includes 4 unit tests for both versions of applying and mapping. It also features benchmarks the performance of the thread library by pitting the multi-threaded `thread_pool::map` against the single-threaded `std::for_each`.
